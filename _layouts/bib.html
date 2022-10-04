@@ -142,9 +142,9 @@
           {%- endif %}
           {%- if entry.pdf %}
             {% if entry.pdf contains '://' -%}
-            <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="{{ entry.pdf }}" ><i class="fa fa-file-pdf"></i></a>
             {%- else -%}
-            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}"><i class="fa fa-file-pdf"></i></a>
             {%- endif %}
           {%- endif %}
           {%- if entry.supp %}
@@ -167,11 +167,18 @@
             <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
             {%- endif %}
           {%- endif %}
+          {%- if entry.video %}
+            {% if entry.video contains '://' -%}
+            <a href="{{ entry.video }}"><i class="fa fa-file-video"></i></a>
+            {%- else -%}
+            <a href="{{ entry.video | prepend: '/assets/pdf/' | relative_url }}"><i class="fa fa-youtube-play"></i></a>
+            {%- endif %}
+          {%- endif %}
           {%- if entry.slides %}
             {% if entry.slides contains '://' -%}
-            <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+            <a href="{{ entry.slides }}"><i class="fa fa-sticky-note"></i></a>
             {%- else -%}
-            <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+            <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}"><i class="fa fa-sticky-note"></i></a>
             {%- endif %}
           {%- endif %}
           {%- if entry.website %}
