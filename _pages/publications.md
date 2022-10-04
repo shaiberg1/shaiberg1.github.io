@@ -13,3 +13,9 @@ nav_order: 1
 
 </div>
 # patents
+
+<div class="publications">
+
+{% bibliography -f patents %}
+
+</div>
