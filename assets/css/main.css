@@ -506,7 +506,8 @@ footer.sticky-bottom {
   margin-top: 0;
 }
 .publications ol.bibliography li {
-  margin-bottom: 1rem;
+  margin-bottom: 0.6rem;
+  margin-left: 7px;
 }
 .publications ol.bibliography li .preview {
   width: 100%;
@@ -536,6 +537,11 @@ footer.sticky-bottom {
 }
 .publications ol.bibliography li .title {
   font-weight: bolder;
+  text-indent: -7px;
+}
+.publications ol.bibliography li .title:before {
+  content: "- ";
+  text-indent: -7px;
 }
 .publications ol.bibliography li .author a {
   border-bottom: 1px dashed var(--global-theme-color);
