@@ -6,7 +6,7 @@ nav: true
 nav_order: 5
 ---
 
-* SOSP 2026 PC
+* ASPLOS 2026 PC
 * OSDI 2025 PC
 * EuroSys 2024 PC
 
