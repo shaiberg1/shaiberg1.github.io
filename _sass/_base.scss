@@ -486,7 +486,8 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.6rem;
+        margin-left: 7px;
       .preview {
         width: 100%;
         min-width: 80px;
@@ -515,7 +516,12 @@ footer.sticky-bottom {
       }
       .title {
         font-weight: bolder;
+        text-indent: -7px;
       }
+    .title:before {
+        content: "- ";
+        text-indent: -7px;
+    }
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);

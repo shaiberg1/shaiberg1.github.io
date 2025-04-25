@@ -1,32 +1,81 @@
 ---
 ---
 
-@article{caoanswering,
-  abbr={MSST 24},
+@inproceedings{zur2025acc,
+  title={Accelerating Nested Virtualization with HyperTurtle},
+  author={Ben Zur, Ori and Krebs, Jacob and Bergman, Shai and Silberstein, Mark},
+  booktitle={2025 USENIX Annual Technical Conference (ATC 25)},
+  selected=true
+}
+
+@inproceedings{bergman2025leveraging,
+  title={Leveraging Approximate Caching for Faster Retrieval-Augmented Generation},
+  author={Bergman, Shai and Ji, Zhang and Kermarrec, Anne-Marie and Petrescu, Diana and Pires, Rafael and Randl, Mathis and de Vos, Martijn},
+  booktitle={Proceedings of the 5th Workshop on Machine Learning and Systems (EuroMLSys 25)},
+  pages={66--73},
+}
+
+@inproceedings{manaouil2025storage,
+  title={Storage cluster for persistency, CXL pools for caching},
+  author={Manaouil, Karim and Zhang, Ji and Zhe, Yang and Wang, Zhou Xing and Bergman, Shai and Barbalace, Antonio},
+  booktitle={Proceedings of the 4th Workshop on Heterogeneous Composable and Disaggregated Systems (HCDS 25)},
+  pages={22--29},
+}
+
+@inproceedings{bergman2024composable,
+  title={Composable Storage Servers: A Storage Paradigm for Disaggregated Systems},
+  author={Bergman, Shai and Mutlu, Onur and Yong, Wu and Huang, Keji and Zhang, Ji},
+  booktitle={2024 International Conference on Networking, Architecture and Storage (NAS 25)},
+  pages={1--4},
+  organization={IEEE}
+}
+
+@article{pandurov2024flexible,
+  title={Flexible Swapping for the Cloud},
+  author={Pandurov, Milan and Humbel, Lukas and Sepp, Dmitry and Ttofari, Adamos and Thomm, Leon and Quoc, Do Le and Chandrasekaran, Siddharth and Santhanam, Sharan and Ye, Chuan and Bergman, Shai and others},
+  journal={arXiv preprint arXiv:2409.13327 2024},
+}
+
+@inproceedings{caoanswering,
   title={Answering the Call to ARMs with PACER: Power-Efficiency in Storage Servers},
   author={Cao, Hankun and Bergman, Shai and Sun, Si and Zhou, Yanbo Albert and Li, Xijun and Gao, Jun and Cheng, Zhuo and Zhang, Ji},
-  booktitle={2024 38th Symposium on Mass Storage Systems and Technologies (MSST)},
+  booktitle={2024 38th Symposium on Mass Storage Systems and Technologies (MSST 24)},
   pdf={msst24.pdf}
 }
 
+
+@inproceedings{ben2023reducing,
+  title={Reducing The Virtual Memory Overhead in Nested Virtualization},
+  author={Ben Zur, Ori and Bergman, Shai and Silberstein, Mark},
+  booktitle={Proceedings of the 16th ACM International Conference on Systems and Storage (Poster, Systor 23)},
+  pages={156--156},
+}
+
 @inproceedings{bergman2023tpt,
-  abbr={ATC 23},
   title={Translation Pass-Through for Near-Native Paging Performance in VMs},
   author={Bergman, Shai and Silberstein, Mark and Shinagawa, Takahiro and Pietzuch, Peter and Vilanova, Llu{\'\i}s},
-  booktitle={2023 USENIX Annual Technical Conference (USENIX ATC 23)},
+  booktitle={2023 USENIX Annual Technical Conference (ATC 23)},
   pdf={atc23-bergman.pdf},
   slides={atc23_slides_bergman.pdf},
-  year={2023},
   selected=true
 }
   
+@article{bergman23znswap,
+author = {Bergman, Shai and Cassel, Niklas and Bj\o{}rling, Matias and Silberstein, Mark},
+title = {ZNSwap: Un-Block Your Swap},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1553-3077},
+url = {https://doi.org/10.1145/3582434},
+doi = {10.1145/3582434},
+journal = {ACM Transactions on Storage (TOS 23)},
+keywords = {ZNS, SSD, swap}
+}
 @inproceedings{bergman2022znswap,
-  abbr={ATC 22},
   title={ZNSwap: un-Block your Swap},
   author={Bergman, Shai and Cassel, Niklas and Bj{\o}rling, Matias and Silberstein, Mark},
-  booktitle={2022 USENIX Annual Technical Conference (USENIX ATC 22)},
+  booktitle={2022 USENIX Annual Technical Conference (ATC 22)},
   pages={1--18},
-  year={2022},
   pdf={atc22-bergman.pdf},
   slides={atc22_slides_bergman.pdf},
   video={https://youtu.be/G_WVGSeBcjY},
@@ -34,33 +83,46 @@
 }
 
 @inproceedings{bergman2022reconsidering,
-  abbr={ISMM 22},
   title={Reconsidering OS memory optimizations in the presence of disaggregated memory},
   author={Bergman, Shai and Faldu, Priyank and Grot, Boris and Vilanova, Llu{\'\i}s and Silberstein, Mark},
-  booktitle={Proceedings of the 2022 ACM SIGPLAN International Symposium on Memory Management},
+  booktitle={Proceedings of the 2022 ACM SIGPLAN International Symposium on Memory Management (ISMM 22)},
   pages={1--14},
-  year={2022},
   pdf={hotbox.pdf},
   selected=true
 }
 
 @inproceedings{vilanova2022slashing,
-  abbr={EuroSys 22},
   title={Slashing the disaggregation tax in heterogeneous data centers with FractOS},
   author={Vilanova, Llu{\'\i}s and Maudlej, Lina and Bergman, Shai and Miemietz, Till and Hille, Matthias and Asmussen, Nils and Roitzsch, Michael and H{\"a}rtig, Hermann and Silberstein, Mark},
-  booktitle={Proceedings of the Seventeenth European Conference on Computer Systems},
+  booktitle={Proceedings of the Seventeenth European Conference on Computer Systems (EuroSys 22)},
   pages={352--367},
-  year={2022},
   pdf={fractos.pdf}
 }
 
+@article{bergman2019spin,
+  title={SPIN: Seamless operating system integration of peer-to-peer DMA between SSDs and GPUs},
+  author={Bergman, Shai and Brokhman, Tanya and Cohen, Tzachi and Silberstein, Mark},
+  journal={ACM Transactions on Computer Systems (TOCS 19)},
+  volume={36},
+  number={2},
+  pages={1--26},
+  publisher={ACM New York, NY, USA}
+}
+
+@article{shahar2018activepointers,
+  title={ActivePointers: A case for software address translation on GPUs},
+  author={Shahar, Sagi and Bergman, Shai and Silberstein, Mark},
+  journal={ACM SIGOPS Operating Systems Review 18},
+  volume={52},
+  number={1},
+  pages={84--95},
+  publisher={ACM New York, NY, USA}
+}
 @inproceedings{bergman2017spin,
-  abbr={ATC 17},
   title={SPIN: Seamless Operating System Integration of Peer-to-Peer DMA Between SSDs and GPUs},
   author={Bergman, Shai and Brokhman, Tanya and Cohen, Tzachi and Silberstein, Mark},
-  booktitle={2017 USENIX Annual Technical Conference (USENIX ATC 17)},
+  booktitle={2017 USENIX Annual Technical Conference (ATC 17)},
   pages={167--179},
-  year={2017},
   pdf={example_pdf.pdf},
   url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
   slides={spin_slides.pdf},
@@ -69,11 +131,11 @@
 }
 
 @inproceedings{shahar2016activepointers,
-  abbr={ISCA 16},
   title={ActivePointers: a case for software address translation on GPUs},
   author={Shahar, Sagi and Bergman, Shai and Silberstein, Mark},
-  booktitle={Proceedings of the 43rd International Symposium on Computer Architecture},
+  booktitle={Proceedings of the 43rd International Symposium on Computer Architecture (ISCA 16)},
   pages={596--608},
-  year={2016},
   pdf={activepointers.pdf},
 }
+
+
