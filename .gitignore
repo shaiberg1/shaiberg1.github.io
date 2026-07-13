@@ -15,3 +15,7 @@ node_modules/
 output/playwright/
 test-results/
 vendor
+
+# local working docs (kept out of the repo)
+CLAUDE.md
+CUSTOMIZATIONS.md
